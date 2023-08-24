@@ -21,6 +21,8 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #ddd;
   background: #0a1c1d;
+  background-image: url('../public/summer.jpeg');
+  background-position: center top;
 }
 
 a {
@@ -34,7 +36,21 @@ svg {
 }
 
 h1 {
-  background: linear-gradient(30deg, #50c8c2, #768dda);
+  background: linear-gradient(30deg, #1a223b, #c6cbdf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  color: #1a223b;
+}
+
+h2 a {
+  color: #374267;
+}
+
+h2 a:hover {
+  background: linear-gradient(30deg, #374267, #ffd596);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

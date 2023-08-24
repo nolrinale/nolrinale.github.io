@@ -11,6 +11,7 @@ export default function App() {
   )
 }
 
+
 function Stars(props) {
   const ref = useRef()
   const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.5 }))
