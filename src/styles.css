@@ -12,7 +12,19 @@ body,
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-image: url('../public/summer.jpeg');
+  background-position: center top;
   animation: introFade 3s ease 0s 1 normal forwards;
+}
+
+#root:before {
+  content:"";
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:rgba(0, 47, 255, 0.175);
 }
 
 body {
@@ -22,8 +34,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #ddd;
   background: #ffffff;
-  background-image: url('../public/summer.jpeg');
-  background-position: center top;
+
 }
 
 a {
@@ -42,17 +53,17 @@ h1 {
 }
 
 h2 {
-  color: #374267;
+  color: #FFFFFF;
 }
 
 h2 a {
-  color: #374267;
+  color:rgb(124, 151, 255);
+  /*color: #374267;*/
 }
 
 h2 a:hover {
-  background: linear-gradient(30deg, #374267, #ffd596);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  
+  text-decoration:underline;
 }
 
 @keyframes introFade {
@@ -67,17 +78,16 @@ h2 a:hover {
 
 @keyframes textIntroFade {
 	0% {
-    top:60%;
+    transform: translate3d(0, 0, 0);
 		opacity: 0;
-    filter: brightness(10);
-    color:#FFFFFF;
+
+    
     
 	}
 
 	100% {
-    top:50%;
-		opacity: 1;
-    filter: brightness(1.8);
-    color: #374267;
+		transform: translate3d(0, 0, 0);
+    opacity: 1;
+    
 	}
 }
