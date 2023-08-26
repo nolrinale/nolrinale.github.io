@@ -12,6 +12,7 @@ body,
   margin: 0;
   padding: 0;
   overflow: hidden;
+  animation: introFade 3s ease 0s 1 normal forwards;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   color: #ddd;
-  background: #0a1c1d;
+  background: #ffffff;
   background-image: url('../public/summer.jpeg');
   background-position: center top;
 }
@@ -36,13 +37,12 @@ svg {
 }
 
 h1 {
-  background: linear-gradient(30deg, #1a223b, #c6cbdf);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:white!important;
+
 }
 
 h2 {
-  color: #1a223b;
+  color: #374267;
 }
 
 h2 a {
@@ -53,4 +53,31 @@ h2 a:hover {
   background: linear-gradient(30deg, #374267, #ffd596);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes introFade {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes textIntroFade {
+	0% {
+    top:60%;
+		opacity: 0;
+    filter: brightness(10);
+    color:#FFFFFF;
+    
+	}
+
+	100% {
+    top:50%;
+		opacity: 1;
+    filter: brightness(1.8);
+    color: #374267;
+	}
 }
